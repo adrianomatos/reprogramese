@@ -1,0 +1,58 @@
+/*
+Fixar no TOPO
+background-repeat: repeat-x;
+background-position: top;
+background-attachment: fixed; /*ao rolar*/
+*/ body {
+    background-color: rgb(128, 136, 38);
+}
+
+h1 {
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+#p1 {
+    /*AUTO para centralizar*/
+    margin: 10px auto;
+    padding: 10px 15px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10%;
+
+    width: 150px;
+    height: 50px;
+
+    /*borda externa*/
+    /*outline-style: solid;
+    outline-color: blue;
+    outline-width: 3px;*/
+
+    /*versao compacta*/
+    outline: solid blue 3px;
+    
+    /*borda afastada (todos os lados apenas)*/
+    outline-offset: 5px;
+}
+
+p {
+    background-color: red;
+    /*color: white;*/
+
+    border: 3px dotted chartreuse;
+
+    border-top: 5px aqua solid;
+
+    border-left-width: 10px;
+    border-left-color: darkorchid;
+    border-left-style: solid;
+
+    border-top-right-radius: 10%;
+
+    padding: 5px;
+
+    margin: 10px;
+    margin-left: 30px;
+}

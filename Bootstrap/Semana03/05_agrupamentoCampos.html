@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complemento de campos de formulários - Agrupamentos</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="mb-3 input-group ">
+            <label for="nome" class="input-group-text">Nome</label>
+            <input type="text" class="form-control" id="nome">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control text-end" id="sobrenome">
+            <label for="sobrenome" class="input-group-text">Sobrenome</label>
+        </div>
+
+        <div class="mb-3 input-group ">
+            <label for="nome" class="input-group-text"><i class="bi bi-xbox fs-5"></i></label>
+            <input type="text" class="form-control" id="nome">
+        </div>
+
+        <div class="input-group mb-3">
+            <label for="dinheiro" class="input-group-text">R$</label>
+            <input type="number" class="form-control" min="0" id="dinheiro" placeholder="0">
+            <label for="dinheiro" class="input-group-text">,00</label>
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control text-end" id="dinheiro">
+            <span for="dinheiro" class="input-group-text">@</span>
+            <input type="text" class="form-control" id="dinheiro">
+        </div>
+
+        <!-- input-group-lg -->
+        <div class="input-group mb-3 ">
+            <label for="dinheiro" class="input-group-text">Mensagem</label>
+            <textarea name="" id="" class="form-control"></textarea>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <input type="checkbox" class="form-check-input mt-0">
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+            <span for="nome" class="input-group-text">Nome Completo</span>
+            <input type="text" class="form-control" id="nome" placeholder="Primeiro nome">
+            <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">BRL</span>
+            <input type="number" class="form-control" placeholder="Valor">
+        </div>
+
+        <div class="mb-3 input-group ">
+            <input type="search" class="form-control">
+            <!-- buttoon.btn.btn-outline-secondary{Buscar} -->
+            <buttoon class="btn btn-outline-danger">Buscar</buttoon>
+        </div>
+
+    </div>
+</body>
+
+</html>

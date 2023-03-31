@@ -1,0 +1,32 @@
+div {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+#div1 {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    /* static é fixa e padrão  E mantém como ocupado o local de origem. Fica no local mesmo após rolagem de página fica em cima de relative*/
+    /*position: static;*/
+    /*relative */
+}
+
+#div2 {
+    background-color: yellow;
+    /*right: 50px;*/
+    position: fixed;
+}
+
+#div3{
+    top: 100px;
+    left: 100px;
+    position: relative;
+    background-color: red;
+}
+
+/* position: absoluta usa div mae se for absoluta, se não usa tela como referencia 
+
+position: sticky
+*/

@@ -1,0 +1,32 @@
+#div1,
+#div2 {
+    height: 140px;
+    width: 140px;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+p {
+    text-align: justify;
+    margin: 10px 10px;
+}
+
+#div1 {
+    background-color: aqua;
+    float: left;
+    margin: 10px;
+}
+
+#div2 {
+    background-color: brown;
+    float: right;
+    margin-left: 10px;
+}
+
+#div_pai {
+    background-color: chartreuse;
+    overflow: hidden;
+}
+
+/* 16min */

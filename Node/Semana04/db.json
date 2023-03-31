@@ -1,0 +1,36 @@
+{
+  "estados": [
+    {
+      "id": "PE",
+      "nome": "Pernambuco"
+    },
+    {
+      "id": "RJ",
+      "nome": "Rio de Janeiro"
+    },
+    {
+      "id": "SP",
+      "nome": "São Paulo"
+    },
+    {
+      "id": "CE",
+      "nome": "Ceará"
+    },
+    {
+      "id": "AL",
+      "nome": "Alagoas"
+    },
+    {
+      "id": "PI",
+      "nome": "Piauí"
+    },
+    {
+      "id": "PB",
+      "nome": "Paraíba"
+    },
+    {
+      "id": "MA",
+      "nome": "Maranhão"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+#div1, #div2 {
+    width: 500px;
+    height: 700px;
+}
+
+#div1{
+    background-color: blue;
+}
+
+#div2{
+    background-color: green;
+}
+
+#div3{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    /* adesiva na tela, 
+    sempre fica visível
+    Ex: Banner, menu, carrinho*/
+    position: sticky;
+    bottom: 30px;
+}

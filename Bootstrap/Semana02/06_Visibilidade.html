@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <style>
+        div.border {
+            height: 150px;
+        }
+    </style>
+</head>
+<div class="bg-danger p-5"></div>
+
+<!-- div.bg.info.p-3.col-3*3 -->
+<div class="bg-primary p-4 m-3 col-3 d-block"></div>
+<div class="bg-warning p-4 m-3 col-3 d-block"></div>
+<div class="bg-success p-4 m-3 col-3 d-block"></div>
+
+<hr>
+
+<div class="bg-danger p-4 m-3 col-3 d-inline"></div>
+<div class="bg-danger p-4 m-3 col-3 d-inline"></div>
+<div class="bg-danger p-4 m-3 col-3 d-inline"></div>
+
+<hr>
+
+<!-- CONTROLE DE ACESSIBILIDADE BASEADO EM BREAKPOINT -->
+<div class="bg-primary p-4 m-3 col-3 d-inline-block"></div>
+<!-- NÃO será mostrada no breakpoint MD -->
+<div class="bg-warning p-4 m-3 col-3    d-inline-block d-md-none"></div>
+<!-- só será mostrada no breakpoint MD -->
+<div class="bg-success p-4 m-3 col-3    d-none d-md-inline-block"></div>
+
+<!-- OCULTAR CONTEÚDOS NA HORA DA IMPRESSÃO -->
+<p class="text-bg-dark d-print-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam deleniti nesciunt
+    temporibus earum iure delectus quisquam voluptatum, laborum dicta inventore.</p>
+<!-- MOSTRA SOMENTE NA IMPRESSÃO -->
+<p class="d-none d-print-block">Adriano Sistemas</p>
+
+<div>
+    <!-- div.p-4.m-3.col-3.bg-primary*3 -->
+    <!-- NONE - deixa de existir
+        INVISIBLE - mantém espaço vazio ocupado-->
+    <div class="p-4 m-3 col-3 bg-secondary d-none"></div>
+    <div class="p-4 m-3 col-3 bg-primary"></div>
+    <div class="p-4 m-3 col-3 bg-success invisible"></div>
+    <div class="p-4 m-3 col-3 bg-warning"></div>
+</div>
+
+<div>
+    <div class=" container bg-info mt-3">
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit
+                voluptate quibusdam vero laborum aspernatur ipsum reiciendis quasi, dolorum, omnis libero adipisci magni
+                natus nisi eum eaque neque, consectetur eveniet.
+            </div>
+
+            <div class="border p-2 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit
+                voluptate quibusdam vero laborum aspernatur ipsum reiciendis quasi, dolorum, omnis libero adipisci magni
+                natus nisi eum eaque neque, consectetur eveniet.
+            </div>
+
+            <div class="border p-2 col-3 overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit
+                voluptate quibusdam vero laborum aspernatur ipsum reiciendis quasi, dolorum, omnis libero adipisci magni
+                natus nisi eum eaque neque, consectetur eveniet.
+            </div>
+
+            <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit
+                voluptate quibusdam vero laborum aspernatur ipsum reiciendis quasi, dolorum, omnis libero adipisci magni
+                natus nisi eum eaque neque, consectetur eveniet.
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>

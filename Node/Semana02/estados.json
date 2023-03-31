@@ -1,0 +1,20 @@
+//O arquivo com o formato .json contém uma série de dados estruturados em formato de texto e são usados para transferir informações entre os sistemas. O nome JSON significa JavaScript Object Notation
+
+// ARRAY DE OBJETOS JSON
+{
+    "estados":[
+        {
+            "nome": "Ceará",
+            "sigla": "CE"
+        },
+        {
+            "nome": "Pernambuco",
+            "sigla": "PE"
+        },
+        {
+            "nome": "Alagoas",
+            "sigla": "AL"
+        }
+    ],
+    "pais":"Brasil"
+}

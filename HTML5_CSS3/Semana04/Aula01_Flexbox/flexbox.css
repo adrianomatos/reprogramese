@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: aquamarine;
+    /* CONTAINER FLEXBOX - similar a display inline */
+    display: flex;
+
+    /* SEQUENCIA dos elementos - row (padrao), 
+    row-reverse(dir p/ esq), 
+    column(coluna), 
+    column-reverse(bixo p/ cima)*/
+    flex-direction: row;
+
+    /* USA TAMANHO PRÉ-DEFINIDO DOS ELEMENTOS E
+    wrap - quebra linha ao preencher largura da página - 
+    nowrap é padrão*/
+    flex-wrap: nowrap;
+
+    /* união de flex-direction com flex-wrap*/
+    /* flex-flow: row nowrap; */
+
+    /* altura DO CONTAINER FLEXBOX body */
+    height: 500px;
+
+    /* alinhamento horizontal
+    flex-start - padrão
+    center,  
+    flex-end - direita
+    space-around - centraliza e divide espaco sobrando entre as BORDAS dos elementos na horizontal
+    space-evenly - centraliza e divide espaco sobrando IGUALMENTE entre elementos na horizontal
+    space-between - JUSTIFICA e divide espaco sobrando IGUALMENTE entre OS elementos na horizontal */
+    justify-content: space-evenly;
+
+    /* alinhamento vertical  
+    flex-start - padrão COLA no topo
+    center,
+    flex-end - bottom
+    stretch - Ocupa altura TOTAL DA LINHA (quando o elemento não tem definição de altura) */
+    align-items: center;
+
+    /* altura é dividida entre as linhas por padrao
+    stretch - padrao ,
+    space-between - Dimensiona altura da linha (A altura da linha passa a ser igual a altura do seu maior ítem), o espaço restante é dividido SOMENTE entre as linhas,
+    space-around - Dimensiona altura da linha (A altura da linha passa a ser igual a altura do seu maior ítem), o espaço restante é dividido ENTRE linhas e MARGENS 
+    space-evenly - intersecção das margens para espaços iguais entre linhas e colunas
+    
+    center - objetos se concentram no centro vertical da pagina
+    flex-start - as linhas vão para início do container - similar texto
+    flex-end - as linhas vão para o final
+    */
+    align-content: stretch;
+}
+
+div {
+    /* height: 120px; */
+    width: 30%;
+    border: 2px red solid;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120px;
+}
+
+/* #div1, #div3, #div5, #div7 {
+    height: 150px;
+} */
+
+/* DEFINIR ORDEM DOS ITENS */
+/*#div1 {order: 3;} #div2 {order: 4;} #div3 {order: 2;} #div4 {order: 5;} #div5 {order: 1;}*/
+
+
+/* ---------------- DIVISÃO DA LARGURA DA PÁGINA ENTRE OS ELEMENTOS ---------------- */
+/* div {
+    // divide largura da página entre os elementos
+    flex-grow: 1;
+}
+
+#div3 {
+    // define que ocupa largura de 2 elementos
+    flex-grow: 2;
+}
+
+#div5 {
+    // define que ocupa largura de 1/2 elementos 
+    flex-grow: 0.5;
+} */
+/* ---------------- TAXA DE ENCOLHIMENTO ---------------- */
+#div2 {
+    flex-shrink: 2;
+}
+
+#div4 {
+    /* flex-shrink: 0; flex-grow: 0; flex-basis: 200px; */
+    /* <flex-grow> <flex-shrink> <flex-basis> */
+    flex: 0 0 200px;
+    /* alinhamento especifico de linha na vertical para elemento */
+    align-self: flex-end;
+}

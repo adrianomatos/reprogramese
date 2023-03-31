@@ -1,0 +1,24 @@
+body {
+    background-image: url(praia-dos-amores-saco.jpg);
+    height: 1000px;
+}
+
+#div1 {
+    width: 200px;
+    height: 400px;
+    background-color: blue;
+}
+
+#div2 {
+    width: 200px;
+    height: 400px;
+    background-color: green;
+    position: relative;
+    left: 200px;
+}
+
+#div3 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}

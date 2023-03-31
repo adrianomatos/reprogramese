@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+}
+
+.borderCabecalho {
+    background: linear-gradient(blue, black);
+    border: 0;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+table {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    width: 80%;
+}
+
+.minhaFoto {
+    border-radius: 50%;
+}
+
+.quadro {
+    line-height: 1.5;
+    margin-right: 10px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.nome {
+    color: gold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.quadro2 {
+    margin-left: 10px;
+    width: 100%;
+    border-radius: 5%;
+}
+
+main {
+    background-color: antiquewhite;
+}
+
+th a{
+    font-style: italic;
+    padding: 15px;
+}
+
+a {
+    color: black;
+    margin: 30px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {}
+
+/*mouse sobre link*/
+th a:hover {
+    /*color: red;*/
+    /*text-decoration: underline;*/
+    /*cursor: pointer;*/
+    background-color: rgb(73, 84, 156);
+    border-radius: 08px;
+}
+
+a:active {}
+
+
+.linkMenu {
+    /*border: solid 1px black;*/
+    padding: 5px;
+    background-color: rgb(164, 149, 149);
+    border-radius: 08px;
+}
+
+.linkContato {
+    /*border: solid 1px black;*/
+    padding: 5px;
+    background-color: rgb(0, 149, 255);
+    border-radius: 08px;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+}

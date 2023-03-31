@@ -1,0 +1,115 @@
+const prompt = require('prompt-sync')();
+
+idade = parseInt(prompt("Digite sua idade: "));
+tempo = parseInt(prompt("Digite seu tempo de serviço: "));
+salário = parseFloat(prompt("Digite seu salário de aposentado: "));
+
+//Ter pelo menos 65 anos, ou;
+//Ter trabalhado pelo menos 30 anos, ou;
+//Ter pelo menos 60 anos e trabalhado pelo menos 25 anos;
+//Em caso de aposentadoria, o salário desse trabalhador seguirá as seguintes regras:
+
+//Caso o tempo de serviço seja maior que 20 anos, seu salário de aposentado de aposentadoria poderá ser de até 80% do último salário recebido como trabalhador;
+//Caso o tempo de serviço seja menor ou igual a 20 anos, seu salário de aposentado de aposentadoria poderá ser de até 60% do último salário recebido como trabalhador;
+//O valor mínimo será de R$ 1212,00 e o valor máximo será de R$ 7087,22;
+
+// Implementar o comando de decisão para verificar se o cidadão pode, ou não, se aposentar
+
+// Implementar os comandos de decisão aninhados para calcular o salário de aposentadoria (80% ou 60%)
+
+// Implementar os comandos de decisão aninhados para garantir o salário de aposentadoria dentro dos limites inferior (R$ 1212,00) e superior (R$ 7087,22)
+
+//Funcoes para uso futuro
+//verificaValorAposentadoria(valor);
+/*function verificaValorAposentadoria(valorRecebido) {
+  var valor = valorRecebido;
+  
+        if (valor >= 7087.12) {
+            msgPodeSeAposentar();
+            console.log("Seu salário de aposentado será de R$ 7.087,22");
+        } else if (valor <= 1212) {
+            msgPodeSeAposentar();
+            console.log("Seu salário de aposentado será de R$ 1.212,00");
+        } else {
+            msgPodeSeAposentar();
+            console.log("Seu salário de aposentado será de R$ " + valor);
+        }
+}*/
+
+function pulaLinha() {
+  console.log();
+}
+
+function msgPodeSeAposentar() {
+  console.log("Você pode se aposentar!");
+  pulaLinha();
+}
+
+
+if (tempo >= 30) {
+  var valor = (salário / 100) * 80;
+  if (valor >= 7087.12) {
+    msgPodeSeAposentar();
+    console.log("Seu salário de aposentado será de R$ 7.087,22");
+  } else if (valor <= 1212) {
+    msgPodeSeAposentar();
+    console.log("Seu salário de aposentado será de R$ 1.212,00");
+  } else {
+    msgPodeSeAposentar();
+    console.log("Seu salário de aposentado será de R$ " + valor);
+  }
+}
+
+
+else if (idade >= 60 && tempo >= 25) {
+
+  var valor = (salário / 100) * 80;
+  if (valor >= 7087.12) {
+    msgPodeSeAposentar();
+    console.log("Seu salário de aposentado será de R$ 7.087,22");
+  } else if (valor <= 1212) {
+    msgPodeSeAposentar();
+    console.log("Seu salário de aposentado será de R$ 1.212,00");
+  } else {
+    msgPodeSeAposentar();
+    console.log("Seu salário de aposentado será de R$ " + valor);
+  }
+
+}
+
+
+else if (idade >= 65) {
+  if (tempo > 20) {
+    var valor = (salário / 100) * 80;
+    if (valor >= 7087.12) {
+      msgPodeSeAposentar();
+      console.log("Seu salário de aposentado será de R$ 7.087,22");
+    } else if (valor <= 1212) {
+      msgPodeSeAposentar();
+      console.log("Seu salário de aposentado será de R$ 1.212,00");
+    } else {
+      msgPodeSeAposentar();
+      console.log("Seu salário de aposentado será de R$ " + valor);
+    }
+
+  } else /*if (tempo <= 20)*/ {
+    var valor = (salário / 100) * 60;
+    if (valor >= 7087.12) {
+      msgPodeSeAposentar();
+      console.log("Seu salário de aposentado será de R$ 7.087,22");
+    } else if (valor <= 1212) {
+      msgPodeSeAposentar();
+      console.log("Seu salário de aposentado será de R$ 1.212,00");
+    } else {
+      msgPodeSeAposentar();
+      console.log("Seu salário de aposentado será de R$ " + valor);
+    }
+  }
+}
+
+
+else {
+  console.log("Você não pode se aposentar!");
+}
+
+console.log("\nParabéns!!! sua nota nesta atividade foi: 10,00");

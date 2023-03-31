@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Sites com HTML5 e CSS3</title>
+</head>
+
+<body>
+    <h1>HTML e CSS</h1>
+    <hr>
+    <h2 id="textos">Textos</h2>
+    <!--COMENTÁRIOS HTML-->
+    <p>
+        <b>Lorem ipsum</b>
+        <i>adipisicing elit</i>.
+        <u>Soluta, in!</u>
+        <s>Dolor sit amet consectetur</s>
+    </p>
+    <p>
+        <big>Lorem ipsum dolor</big>,
+        <small>sit amet consectetur adipisicing elit</small>.
+        <del>Natus facilis atque dignissimos</del>.
+    </p>
+    <p>
+        <em>Natus facilis atque dignissimos</em>
+    </p>
+
+    <h2 id="listas">Listas</h2>
+    <ol type="I" start="4" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <ul>
+        <li>Adriano</li>
+        <li>Rodrigues</li>
+        <li>Matos</li>
+    </ul>
+
+    <h2>Citações</h2>
+    <blockquote cite="google.com">
+        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit</q>. Ipsum animi odio nemo iste architecto, velit
+        necessitatibus.
+    </blockquote>
+
+    <h2>Links</h2>
+    <a href="#textos" title="Link dentro da página" target="">Link interno</a>
+    <a href="#listas">
+        <img src="img/banana.gif" title="Link interno na banana" width="80" alt="Link interno na imagem banana">
+    </a>
+
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HiperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascating Style Sheets</dd>
+    </dl>
+
+    <h2>Código</h2>
+    <code>
+        <pre>
+        class OlaMundo{
+            public static void main(String args[]){
+                System.out.println("Olá Mundo");
+            }
+        }
+        </pre>
+    </code>
+
+    <h2>Imagens</h2>
+    <img src="img/moon.png" title="Lua" alt="Figura Lua" width="50">
+    <img src="img/sun.png" title="Sol" alt="Figura Sol" width="50">
+    <img src="img/world.png" title="Terra" alt="Figura Terra" width="50">
+    <img src="img/mapa_brasil_100X100_regioes_2.webp" alt="Map BR" width="50">
+    <br>
+
+    <h2>Formas com bordas mapeadas</h2>
+    <img src="img/formas.png" alt="Formas" usemap="#formas">
+    <br>
+    <map name="formas">
+        <!--centro x/y e raio-->
+        <area shape="circle" coords="71,74,68" href="circulo.html" alt="Círculo">
+        <!--canto inferior esquerdo e superior direito-->
+        <area shape="rect" coords="177,139,314,2" href="quadrado.html" alt="Quadrado">
+        <area shape="rect" coords="352,114,526,28" href="retangulo.html" alt="Retangulo">
+        <!--Lados e vértices com no mínimo 3 coordenadas-->
+        <area shape="poly" coords="567,132,627,10,688,132" href="poligono.html" alt="Poligono">
+    </map>
+
+    <h3>Mapeamento de imagem usando: https://www.image-map.net/</h3>
+    <img src="https://www.mapasmundi.com.br/blog/wp-content/uploads/2015/07/mapa_brasil_100X100_regioes_2.png"
+        usemap="#brasil">
+    <map name="brasil">
+        <area target="" alt="Ceará" title="Ceará" href="ce.html"
+            coords="751,213,741,206,726,192,705,177,692,169,672,171,667,180,670,189,672,199,671,210,675,219,677,234,678,244,685,253,680,261,688,264,698,264,710,273,720,271,719,255,723,239,732,234,741,217"
+            shape="poly">
+    </map>
+
+    <h2>Conteúdo multimídia</h2>
+    <!--Usar poster quando não usar autoplay-->
+    <video controls width="400" height="300" muted poster="Aula06/popeye_for_president.jpg">
+        <source src="Aula06/PopeyeforPresident.mp4" type="video/mp4">
+        <source src="Aula06/PopeyeforPresident.webm" type="video/webm">
+        <source src="Aula06/PopeyeforPresident.ogv" type="video/ogv">
+        <!--legenda-->
+        <track kind="captions" srclang="en-us" src="Aula06/PopeyeforPresident.en-us.vtt" label="Closed Captions">
+        <track kind="subtitles" srclang="pt-br" src="Aula06/PopeyeforPresident.pt-br.vtt" label="Português-BR" default>
+        <!--Tradução EXTENSÃO: Subtitles Editor-->
+        <track kind="subtitles" srclang="es" src="Aula06/PopeyeforPresident.es.vtt" label="Espanhol">
+        <!--erro de incompatibilidade html5-->
+        Aviso: Seu navegador não suporta vídeos HTML5
+    </video>
+
+    <h3>Conteúdo do Youtube</h3>
+
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/Vd4mTBovAYU?mute=1&controls=0&amp&start=392&autoplay=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <h3>Playlist Youtube</h3>
+    <iframe width="800" height="450"
+        src="https://www.youtube.com/embed/videoseries?start=0&amp&list=PL0YuSuacUEWuJN3qb6NP15bzqd8w_oAj7&loop=1"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <h3>Conteúdo multimídia Áudio</h3>
+    <audio controls>
+        <source src="Aula06/piada.mp3" type="audio/mp3">
+        <source src="Aula06/piada.ogg" type="audio/ogg">
+        <source src="Aula06/piada.wav" type="audio/wav">
+    </audio>
+
+    <h2>Imagens SVG</h2>
+    <!--ÁREA 100 X 100
+    ÁREA CIRCULAR
+    COORDENADA X=50
+    COORDENADA Y=50
+    RAIO=48
+    CONTORNO=VERDE
+    CONTORNO-LARGURA=4
+    PREENCHIMENTO=AMARELO
+    -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="48" stroke="green" stroke-width="4" fill="yellow">
+    </svg>
+
+    <!--x e y funciona como margin (borda fica saindo do quadro svg)-->
+    <svg width="100" height="100">
+        <rect width="96" height="96" x="2" y="2" stroke="green" stroke-opacity="0.5" stroke-width="4" fill="yellow"
+            fill-opacity="0.5" rx="10" ry="10">
+    </svg>
+
+    <svg width="100" height="100">
+        <ellipse cx="50" cy="50" stroke="green" stroke-width="4" fill="yellow" rx="40" ry="20">
+    </svg>
+
+    <svg width="100" height="100">
+        <line x1="0" y1="0" x2="100" y2="100" stroke="green" stroke-width="4">
+    </svg>
+
+    <svg width="100" height="100">
+        <polygon points="4,96,50,4,96,96" stroke="green" stroke-width="4" fill="yellow">
+    </svg>
+
+    <hr>
+
+    <svg width="202" height="202">
+        <polygon points="100,10,40,198,190,78,10,78,160,198" fill-rule="evenodd" stroke="green" stroke-width="4"
+            fill="yellow">
+    </svg>
+
+    <svg width="202" height="202">
+        <polyline points="0,40,40,40,40,80,80,80,80,120,120,120,120,160" stroke="green" stroke-width="4" fill="none">
+    </svg>
+
+    <hr>
+
+    <svg width="600" height="300">
+        <rect width="596" height="296" fill="none" stroke="blue" stroke-width="4" x="2" y="2" />
+        <text x="300" y="150" text-anchor="middle">
+            SVG completo
+        </text>
+    </svg>
+
+    <svg width="600" height="300">
+        <rect width="596" height="296" fill="none" stroke="blue" stroke-width="4" x="2" y="2" />
+        <rect width="60" height="30" fill="green" stroke="blue" stroke-width="4" x="10" y="10" id="r1" />
+
+        <animate xlink:href="#r1" attributeName="width" from="10" to="600" dur="2s" begin="2s" fill="remove"
+            repeatCount="indefinite" />
+    </svg>
+
+
+
+
+</body>
+
+</html>

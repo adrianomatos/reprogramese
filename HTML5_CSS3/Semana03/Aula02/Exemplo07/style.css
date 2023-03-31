@@ -1,0 +1,30 @@
+div {
+    border: solid 1px black;
+    margin: 30px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    /* TRANSPARENCIA */
+    opacity: 1;
+    /* TEMPO DE TRANSIÇÃO */
+    transition: 0.5s;
+}
+
+div:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#div1 {
+    background-color: blue;
+}
+
+#div2 {
+    background-color: yellow;
+}
+
+#div3 {
+    background-color: red;
+}

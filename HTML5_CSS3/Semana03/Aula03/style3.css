@@ -1,0 +1,24 @@
+div{
+    display: inline-block;
+}
+#div1 {
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+
+    /* 13 minutos */
+}
+#div2 {
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+}
+
+#div3 {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}

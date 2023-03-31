@@ -1,0 +1,18 @@
+// json
+[{"nome":"Adriano","idade":37},{"nome":"Rebeca","idade":34},{"nome":"Juninho","idade":13}]
+
+// objeto js
+/*{
+    "pessoas": [
+        {
+            "nome": "Adriano",
+            "idade": 37
+        },
+        {
+            "nome": "Rebeca",
+            "idade": 34
+        }
+    ]
+}*/
+
+// {"nome":"Adriano"}

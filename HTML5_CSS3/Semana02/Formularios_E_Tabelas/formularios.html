@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">Página inicial - </a>
+    <a href="tabelas.html">Tabelas - </a>
+    <a href="formularios.html">Formulários</a>
+    <h3 align="center">Formulários</h3>
+
+    <form action="rapadura.php" method="get">
+        <p>
+            <!--NOME-->
+            <label for="txtNome">Nome completo: </label><br>
+            <input type="text" name="nome" id="txtNome" placeholder="Insira seu nome completo" value="">
+        </p>
+        <p>
+            <!--E-MAIL-->
+            <label for="txtEmail">E-mail: </label><br>
+            <input type="email" name="email" id="txtEmail" placeholder="Insira seu melhor e-mail" value="">
+        </p>
+        <p>
+            <!--CARGO-->
+        <fieldset>
+            <legend>Cargo pretendido</legend>
+            <input type="radio" id="radioWeb" name="cargo" value="web" required>
+            <label for="radioWeb">Programador WEB</label><br>
+
+            <input type="radio" id="radioDesktop" name="cargo" value="desktop">
+            <label for="radioDesktop">Programador Desktop</label><br>
+
+            <input type="radio" id="radioFirefoxMobile" name="cargo" value="desktop" disabled>
+            <label for="radioFirefoxMobile">Programador Firefox Mobile</label><br>
+        </fieldset>
+        </p>
+
+        <p>
+        <fieldset>
+            <legend>Categoria</legend>
+            <input type="checkbox" id="checkboxNoticias" name="noticias" value="noticias">
+            <label for="checkboxNoticias">Notícias</label>
+
+            <input type="checkbox" id="checkboxEsportes" name="esportes" value="noticias">
+            <label for="checkboxEsportes">Esportes</label>
+
+            <input type="checkbox" name="cursos" id="chekboxCursos" disabled>
+            <label for="chekboxCursos">Cursos</label>
+        </fieldset>
+        </p>
+
+        <p>
+            <!--ACEITO TERMOS-->
+            <input type="checkbox" id="checkTermos" name="aceitoTermos">
+            <label for="checkTermos">Aceito os termos de uso!</label>
+        </p>
+        <p>
+            <!--SELECT-->
+            <label for="selectEstado">Estado:</label><br>
+            <select name="estado" id="selectEstado">
+                <optgroup label="Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PI">Piauí</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE" selected>Ceará</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <!--SELECT MULTIPLE-->
+            <label for="selectLinguagens">Linguagens:</label><br>
+            <select name="linguagens" id="selectLinguagens" size="6" multiple>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="node">NodeJs</option>
+                <option value="php">PHP</option>
+                <option value="csharp">C#</option>
+                <option value="python">Python</option>
+                <option value="ruby">Ruby</option>
+                <option value="go">Go</option>
+            </select>
+        </p>
+        <p>
+            <!---->
+            <label for="textCidade">Cidade:</label><br>
+            <input type="text" name="cidade" id="textCidade" list="cidades" placeholder="Escolha ou informe a cidade">
+            <datalist id="cidades">
+                <option value="Fortaleza">
+                <option value="Recife">
+                <option value="Salvador">
+                <option value="Terezina">
+                <option value="Brasília">
+                <option value="Manaus">
+            </datalist>
+        </p>
+        <p>
+            <!--TEXTAREA-->
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Deixe aqui sua sugestão..."></textarea>
+        </p>
+        <p>
+            <!--ENVIAR-->
+            <input type="submit" value="Enviar">
+        </p>
+        <p>
+            <!--RESET-->
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!--################################################-->
+    <hr>
+
+    <h3 align="center">PET SHOP</h3>
+    <form action="/contato/cotar" method="post">
+        <p>
+            <label for="txtNome">Nome do dono: </label><br>
+            <input type="text" name="nome" id="txtNome" placeholder="Insira seu nome completo" value="">
+        </p>
+        <p>
+            <label for="selectAnimal">Tipo de animal:</label><br>
+            <select name="animal" id="selectAnimal">
+                <option value="dog">Cachorro</option>
+                <option value="rabbit">Coelho</option>
+                <option value="cat">Gato</option>
+                <option value="bird">Pássaro</option>
+            </select>
+        </p>
+        <p>
+            <label for="textServico">Serviço escolhido:</label><br>
+            <input type="text" id="textServico" name="servico" placeholder="Serviço desejado">
+        </p>
+        <p>
+            <label for="obsTextarea">Observações:</label><br>
+            <textarea name="obs" id="obsTextarea" cols="30" rows="10"
+                placeholder="Indique suas observações..."></textarea>
+        </p>
+    </form>
+
+    <!--################################################-->
+    <hr>
+
+    <h3 align="center">INPUTS TEXT</h3>
+    <form action="" method="get">
+        <p>
+            <label for="cpf">CPF:</label><br>
+            <input type="text" id="cpf" name="cpf" readonly value="123.456.789-10">
+        </p>
+        <p>
+            <label for="cpf2">CPF:</label><br>
+            <input type="text" id="cpf2" name="cpf2" disabled value="123.456.789-10">
+        </p>
+        <p>
+            <label for="textCartao">Nº do cartão de crédito:</label><br>
+            <input type="text" id="textCartao" name="cartaoCredito" size="20" maxlength="16" autocomplete="off">
+        </p>
+        <p>
+            <label for="txtCidades">Cidades:</label><br>
+            <input type="text" id="txtCidades" list="cidades">
+            <datalist id="cidades">
+                <option value="Fortaleza">
+                <option value="Recife">
+                <option value="Salvador">
+                <option value="Terezina">
+                <option value="Brasília">
+                <option value="Manaus">
+            </datalist>
+        </p>
+        <p>
+            <label for="textPlaca">Placa:</label><br>
+            <input type="text" id="textPlaca" name="placa" placeholder="ABC-1234" pattern="[A-Z]{3}-[0-9]{4}">
+        </p>
+        <p>
+            <label for="telefone">Nº de telefone:</label><br>
+            <input type="text" placeholder="xx-xxxxx.xxxx" pattern="[0-9]{2}-[0-9]{5}.[0-9]{4}" required maxlength="13">
+        </p>
+        <p>
+            <label for="textcpf">CPF:</label><br>
+            <input type="text" id="textcpf" name="cpf3" placeholder="123.456.789-00"
+                pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}.[0-9]{2}">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+    <!--################################################-->
+    <hr>
+
+    <h3 align="center">OUTROS INPUTS</h3>
+    <form action="" method="get">
+        <p>
+            <label for="inputsenha">Senha:</label><br>
+            <input type="password" name="senha" id="inputsenha" placeholder="Insira sua senha">
+        </p>
+        <p>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Enviar">
+        </p>
+        <p>
+            <!--INPUT GENÉRICO BUTTON, EX: Acionar cód JS-->
+            <input type="button" value="Botão exibir alerta" onclick="alert('Alerta de button')">
+        </p>
+        <p>
+            <!--INPUT GENÉRICO BUTTON, EX: Acionar cód JS-->
+            <input type="button" value="Botão submeter Formulário" onclick="this.form.submit();">
+        </p>
+        <p>
+            <label for="colorCor">Cor:</label>
+            <input type="color" name="cor" id="colorCor">
+        </p>
+        <p>
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" name="dataNasc" id="data" min="2022-01-31" max="2022-12-31">
+        </p>
+        <p>
+            <label for="dateTimeLocal">Data de Cadastro:</label>
+            <input type="datetime-local" name="dataCadastro" id="dateTimeLocal" min="2022-01-31T00:00:00"
+                max="2022-12-31T00:00:00">
+        </p>
+        <p>
+            <label for="campoEmail">E-mail:</label>
+            <input type="email" name="email" id="campoEmail" autofocus placeholder="nome@email.com">
+        </p>
+        <p>
+            <label for="anexo">Anexar:</label>
+            <input type="file" name="arquivo" id="anexo">
+        </p>
+        <p>
+            <input type="hidden" name="id" value="356">
+        </p>
+        <p>
+            <label for="mesAno">Mês Pagamento:</label>
+            <input type="month" name="mesFolhaPag" id="mesAno">
+        </p>
+        <p>
+            <label for="dia">Arroz (no fardo com 5):</label>
+            <input type="number" name="" id="dia" min="1" max="31" step="5" placeholder="5 em 5">
+            <!--STEP: altera de quantos em quantos-->
+        </p>
+        <p>
+            <label for="">Brilho:</label>
+            <input type="range" name="" id="" step="10" min="0" max="100">
+        </p>
+        <p>
+            <label for="">Buscar:</label>
+            <input type="search" name="" id="" placeholder="Buscar">
+        </p>
+        <p>
+            <label for="telCel">Celular:</label>
+            <input type="tel" name="celular" id="telCel" placeholder="Somente os 11 dígitos" pattern="[0-9]{11}"
+                maxlength="11">
+        </p>
+        <p>
+            <label for="hr">Horário da consulta (07h às 17h):</label>
+            <input type="time" name="horario" id="hr" min="07:00" max="17:00">
+        </p>
+        <p>
+            <label for="link">Linkedin:</label>
+            <input type="url" name="linkedin" id="link" placeholder="https://www.linkedin.com/in/...">
+        </p>
+        <p>
+            <label for="linkGit">Github:</label>
+            <input type="url" name="github" id="linkGit" placeholder="https://github.com/...">
+        </p>
+        <p>
+            <label for="">Semana gestacional:</label>
+            <input type="week" name="" id="" min="2022-W22" max="2023-W30">
+        </p>
+    </form>
+</body>
+
+</html>

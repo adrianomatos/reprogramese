@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reprograme-se</title>
+
+
+  <!-- CSS Bootstrap via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- JS Bootstrap via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+    defer></script>
+
+  <!-- Ícones Bootstrap via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS e JS incorporados -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/">
+</head>
+
+
+<body>
+
+  <!--Barra de navegação-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#">REPROGRAME-SE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
+        aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#ComoFunciona">Como Funciona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#PerguntasFrequentes">Perguntas Frequentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contato">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Realizacao">Realização</a>
+          </li>
+
+        </ul>
+        <form role="search">
+          <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ACESSIBILIDADE -->
+  <div class="center">
+    <br>
+    <button onclick="acessibilidade()">Acessibilidade</button>
+    <button id="corNormal">Normal</button><br>
+  </div>
+
+
+  <div class="container-lg mt-5">
+    <!-- NOTÍCIAS -->
+    <div class="row row_noticias">
+      <h1 class="display-5 fw-bold lh-1 mb-3 mt-0 pt-0">Últimas notícias</h1>
+
+      <div class="col-12 col-sm-4 col_noticias bg-light">
+        <img src="assets/img/mockups/homem-camisa.png" height="300px" class="img_noticias" alt="">
+        <h3>Notícia Exemplo 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque possimus commodi facere dolorem esse!
+        </p>
+        <p class="dataHora">03/03/2023 - 10:00am</p>
+      </div>
+
+      <div class="col-12 col-sm-4 col_noticias border">
+        <img src="assets/img/mockups/Cabelos-cacheados-apontando-logo.png" height="300px" class="img_noticias" alt="">
+        <h3>Notícia Exemplo 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque possimus commodi facere dolorem esse!
+        </p>
+        <p class="dataHora">04/03/2023 - 09:45pm</p>
+      </div>
+
+      <div class="col-12 col-sm-4 col_noticias bg-light">
+        <img src="assets/img/mockups/homem-camisa.png" height="300px" class="img_noticias" alt="">
+        <h3>Notícia Exemplo 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque possimus commodi facere dolorem esse!
+        </p>
+        <p class="dataHora">05/03/2023 - 11:45am</p>
+      </div>
+    </div>
+
+
+    <!-- Seção formulário de contato -->
+    <div>
+      <h1 id="Contato" class="display-5 fw-bold lh-1 mb-3 mt-5">Formulário de Contato</h1>
+
+      <!-- O destino precisa CONFIRMAR email contato@reprograme-se.org.br para receber e-mail desta origem -->
+      <form action="https://formsubmit.co/contato@reprograme-se.org.br" method="POST">
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+
+        <div class="row mb-3 g-2 ">
+          <div class="col-12 col-lg-8 col-xl-6 col-xxl-6 mx-auto">
+            <div class="input-group">
+              <label for="nome" class="input-group-text"><i class="bi bi-person-fill fs-6 p-2"></i></label>
+              <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-8 col-xl-6 col-xxl-6 mx-auto">
+
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="input-group mb-3 g-2">
+                  <label for="email" class="input-group-text"><i class="bi bi-envelope-at-fill fs-6 p-2"></i></label>
+                  <input type="email" class="form-control" id="email" placeholder="E-mail">
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="input-group mb-3 g-2">
+                  <label for="categoria" class="input-group-text"><i class="bi bi-boxes fs-6 p-2"></i></label>
+                  <select name="" id="categoria" class="form-select" placeholder=" ">
+                    <option value="">Selecione a Categoria</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestões</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="outros">Outros</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mb-3 g-2">
+          <div class="col-12 col-lg-8 col-xl-6 col-xxl-6 mx-auto">
+            <div class="input-group ">
+              <label for="msg" class="input-group-text"><i class="bi bi-chat-dots-fill fs-6 p-2"></i></label>
+              <textarea class="form-control" id="msg" rows="3" placeholder="Digite sua Mensagem"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3 g-2">
+          <div class="col-12 col-lg-8 col-xl-6 col-xxl-6 mx-auto">
+            <button class="btn btn-primary ">Enviar mensagem</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+  <!--Seção área Como Funciona (botão inscreva-se)-->
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom bg-light">
+    <h1 id="ComoFunciona" class="display-4 fw-bold">Como Funciona</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="display-6 fw-bold">São 16 polos espalhados pelo Estado.</p>
+      <p class="lead mb-4">O polo é um espaço de apoio para os seus estudos.
+        Basta
+        se dirigir a um mais próximo de você. Com itinerário formativo ágil, flexível, orientado por projetos práticos
+        reais e integrado com o mundo do trabalho, o participante tem a possibilidade de ingressar em estágios nas
+        empresas de tecnologia do Estado.
+
+        Uma metodologia preparada especialmente para a capacitação em um curto espaço de tempo, por profissionais
+        experientes na modalidade EAD.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a class="btn btn-primary btn-lg px-4 me-sm-3"
+          href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se#"
+          target="_blank" role="button">Inscreva-se</a>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 50%;">
+      <div class="container px-5">
+        <img src="assets/img/mockups/Jovens.png" class="img-fluid mb-4" alt="Foto de jovens" width="50%" height="50%"
+          loading="lazy">
+      </div>
+    </div>
+  </div>
+
+
+  <!--Seção Informações sobre o curso-->
+
+  <div class="container col-xxl-8 px-4  border-bottom">
+    <div class="row flex-lg-row-reverse align-items-center g-5">
+
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Oportunidades</h1>
+        <p class="lead">Um mundo de oportunidades nas empresas de tecnologia do Espírito Santo, que oferecem uma
+          grande
+          demanda por profissionais com competências em desenvolvimento de software. Você conta com um acompanhamento
+          e
+          orientação de forma intensiva de professores, tutores e monitores na construção da sua aprendizagem.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a class="btn btn-primary btn-lg px-4 me-sm-3"
+            href="https://cachoeiro.ifes.edu.br/images/stories/2022/editais/252022/Estrutura_e_organizacao_do_reprograme-se.pdf"
+            target="_blank" role="button">Saiba Mais</a>
+        </div>
+      </div>
+
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="assets/img/mockups/Cabelos-cacheados-apontando-logo.png" class="d-block mx-lg-auto img-fluid"
+          alt="Mulher de cabelos cacheados" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+
+  <!--Seção depoimentos de alunos-->
+  <div class="container marketing">
+
+    <div class="center row mt-5">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+        </svg>
+        <h2 class="fw-normal">Depoimento 1</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+          looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+          as
+          opposed.</p>
+      </div>
+
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+        </svg>
+        <h2 class="fw-normal">Depoimento 1</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+          looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+          as
+          opposed.</p>
+      </div>
+
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+        </svg>
+        <h2 class="fw-normal">Depoimento 1</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+          looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+          as
+          opposed.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Seção perguntas e respostas-->
+  <div class="container marketing">
+    <div class="mt-5">
+      <h1 id="PerguntasFrequentes" class="display-5">Perguntas Frequentes
+        <small class="text-muted">(FAQ)</small>
+      </h1>
+    </div>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Quais são os cursos de projeto reprograme-se?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            O reprograme-se é composto por dois cursos: o curso Programação básica de aplicativos
+            Web - Front-end e o curso Programação com JavaScript e o Framework Node.js - Backend <a
+              href="https://cachoeiro.ifes.edu.br/images/stories/2022/editais/252022/Estrutura_e_organizacao_do_reprograme-se.pdf"
+              target="_blank">(confira o link da
+              estrutura do curso).</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">
+            Quanto tempo eu tenho para finalizar os cursos do projeto reprograme-se?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            O reprograme-se terá a duração de 8 meses, sendo 4 meses para o curso Programação
+            básica de aplicativos Web - Front-end e 4 meses para o curso Programação com
+            JavaScript e o Framework Node.js - Back-end.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">
+            Tenho que pagar inscrição?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            Não, o curso é totalmente gratuito.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFour">
+            Terei atendimentos se tiver dúvidas?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            Sim. Você contará com o apoio de um professor mediador que possui formação na área
+            do reprograme-se e um Monitor que é estudante de curso de informática.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFive">
+            Os cursos do projeto Reprograme-se serão realizados somente a distância?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingFive">
+          <div class="accordion-body">
+            Não, embora a maioria das atividades, tanto práticas como teóricas sejam desenvolvidas
+            à distância, haverá apoio e orientação de forma presencial no polo UAB do município
+            (ES), mais próximo de sua residência. Os polos estão listados no edital.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseSeven">
+            O curso será gravado, podendo assistir posteriormente?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingSeven">
+          <div class="accordion-body">
+            Sim. O curso está no AVA- Moodle e nele os materiais, os conteúdos e atividades
+            poderão ser acessados 24 horas por dia. Entretanto existem prazos finais para o
+            cumprimento das atividades que possuem o encerramento, semanalmente.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseEight">
+            Como serão realizadas as aulas online?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingEight">
+          <div class="accordion-body">
+            As aulas online serão realizadas na plataforma Moodle e, neste ambiente, teremos todo
+            o material do curso, dentre eles, videoaulas gravadas, textos, link à Internet e
+            atividades variadas.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseNine">
+            Posso estudar de qualquer lugar?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingNine">
+          <div class="accordion-body">
+            Sim, desde que sua localidade permita você frequentar encontros presenciais que
+            ocorrerão no polo de apoio presencial do município do Estado do Espírito Santo – polo
+            UAB, conforme listados no edital.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTen">
+            Sou morador de outro Estado é possível fazer o curso totalmente online?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTen">
+          <div class="accordion-body">
+            Não! A proposta pedagógica do curso não permite que o curso seja totalmente online
+            devido a complexidade do conteúdo “programação web”, dessa forma haverá
+            necessidade de encontros presenciais para orientação e realização das atividades
+            práticas. Assim você deverá ser morador do Estado do Espírito Santo.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseEleven">
+            Tenho que ir ao Ifes para fazer alguma atividade?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingEleven">
+          <div class="accordion-body">
+            Não! A maioria das atividades serão realizadas de forma online utilizando-se do
+            Ambiente de Aprendizagem – Moodle e em ambiente interativo de desenvolvimento, e,
+            os momentos presenciais serão realizados no polo de apoio presencial UAB do
+            município, em horário combinado com o Professor Mediador.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseSix">
+            Sou obrigado a ir ao polo de apoio presencial?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingSix">
+          <div class="accordion-body">
+            Sim. Considerando a complexidade do conteúdo de programação é importante para
+            efetivação da aprendizagem que você participe de momentos presenciais de estudos. O
+            Professor mediador estará disponível para orientar a aprendizagem, sanar as dúvidas
+            em relação aos conteúdos, bem como, acompanhar a execução das atividades
+            avaliativas.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwelve">
+            Haverá acompanhamento ao estudante com horário pré determinados?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwelve">
+          <div class="accordion-body">
+            Sim. Haverá acompanhamento em horários pré-determinados por meio do programa
+            Repl-it para realização das atividades de programação de forma interativa e, ainda,
+            atividades síncronas por meio web conferência e encontros presenciais no polo de apoio
+            presencial UAB do município listado no edital.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThirteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThirteen" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThirteen">
+            Se eu realizar os cursos do projeto reprograme-se estarei preparado para programar?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThirteen" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingThirteen">
+          <div class="accordion-body">
+            O egresso do curso “Reprograme-se” estará preparado para assumir demandas de
+            mercado de baixa complexidade no desenvolvimento de soluções web usando a
+            linguagem de programação Javascript juntamente com o framework Node.js, estando
+            também fundamentado para se adaptar a outras plataformas de desenvolvimento.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFourteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFourteen">
+            Sou estudante do último ano do Ensino Médio em Escola particular, minha inscrição
+            será aceita?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFourteen" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingFourteen">
+          <div class="accordion-body">
+            Neste momento, não! Esta oferta do reprograme-se está aberta somente para quem já
+            possui o Ensino Médio completo e estudantes do último ano do Ensino Médio da escola
+            pública
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFifteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFifteen" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFifteen">
+            O aluno fará seu próprio horário pessoal de estudos?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFifteen" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingFifteen">
+          <div class="accordion-body">
+            Sim. Entretanto é possível que precisará adaptar-se a alguns horários de atendimento
+            com o Professor Mediador e Monitor.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!--Seção Ifes e Action-->
+  <div class="container marketing">
+    <div class="mt-5">
+      <h1 id="Realizacao" class="display-3">Realização
+      </h1>
+    </div>
+
+    <div class="container">
+      <div class="center row g-5 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col mx-auto">
+          <img src="assets/img/logo-ifes/ifes-vertical-cor.png" class="img-thumbnail" height="400px" alt="Logo Ifes">
+          <h3 class="fs-2 mt-3">IFES</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+            probably just keep going until we run out of words.</p>
+          <a href="https://cachoeiro.ifes.edu.br/" target="_blank" class="icon-link d-inline-flex align-items-center">
+            Mais informações</a>
+        </div>
+        <div class="feature col mx-auto">
+          <img src="assets/img/logo-action/vertical-cor.png" class="img-thumbnail" height="400px" alt="Logo Ifes">
+          <h3 class="fs-2 mt-3">Action</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+            probably just keep going until we run out of words.</p>
+          <a href="https://cachoeiro.ifes.edu.br/" target="_blank" class="icon-link d-inline-flex align-items-center">
+            Mais informações</a>
+        </div>
+        <div class="feature col mx-auto">
+          <img src="assets/img/logo-reprogramese/preferencial-vertical.png" class="img-thumbnail" height="400px"
+            alt="Logo Ifes">
+          <h3 class="fs-2 mt-3">Reprograme-se</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+            probably just keep going until we run out of words.</p>
+          <a href="https://cachoeiro.ifes.edu.br/" target="_blank" class="icon-link d-inline-flex align-items-center">
+            Mais informações</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--Rodapé-->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+      <title>REPROGRAME-SE</title>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+      </path>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path
+        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+      <path
+        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+      <path
+        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+    </symbol>
+  </svg>
+
+  <div class="container-fluid">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center bg-light py-3 my-4">
+      <div class="col-md-4 d-flex align-items-center">
+
+        <span class="mb-3 mb-md-0 ms-3 text-muted">&copy; REPROGRAME-SE</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3 me-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <!-- <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <script src="/assets/js/script.js"></script> -->
+
+
+
+</body>
+
+</html>

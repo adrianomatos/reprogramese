@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <!-- DEFER - CARREGA APÓS A PÁGINA -->
+    <style>
+        .row {
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .col-3 {
+            background-color: blueviolet;
+            padding: 20px;
+            border: solid 1px red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.container>div.row>div.col-3{Coluna $}*3 -->
+    <div class="container">
+        <!-- align-items-center -->
+        <div class="row ">
+            <div class="col-3 align-self-start">Coluna 1</div>
+            <div class="col-3 align-self-center">Coluna 2</div>
+            <div class="col-3 align-self-end">Coluna 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- ALINHA AO CENTRO SE MAIOR QUE 540PX -->
+        <div class="row bg-danger align-items-sm-center">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- ALINHAMENTOS: start(padrao), center, end, between(entre), around(margens se somam) e evenly(margens externas iguais)  -->
+        <div class="row bg-dark align-items-sm-center justify-content-evenly">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-sm-center justify-content-evenly">
+            <div class="col-3">Coluna 1</div>
+            <div class="w-100"></div> <!-- "ENTER" -->
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-black align-items-sm-center justify-content-evenly">
+            <div class="col-3 order-last">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3 order-first">Coluna 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-danger align-items-sm-center justify-content-evenly">
+            <!-- deslocamentos que ocupam posições 1/12 da coluna -->
+            <div class="col-3 offset-1">DIV 1</div>
+            <div class="col-3 offset-2">DIV 2</div>
+            <div class="col-3">DIV 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-black align-items-center ">
+            <!-- MARGEM START divididas se + de 1 - MS -->
+            <div class="col-3 ms-auto">DIV 1</div>
+            <div class="col-3 ms-auto">DIV 2</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-warning align-items-center ">
+            <!-- CENTRALIZAR no eixo X -->
+            <div class="col-3 mx-auto">DIV 1</div>
+        </div>
+    </div>
+
+    <div class="container bg-black">
+        <!-- divs soltas -->
+        <div class="col-3">DIV 1</div>
+        <div class="col-3">DIV 2</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM - Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Validação de campos com HTML e senhas com JavaScript</h1>
+    <form name="form1" action="#" method="get">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <label for="fone">Telefone</label>
+        <input type="tel" name="fone" placeholder="(99)99999-9999" required pattern="\(\d{2})\d{5}-\d{4}">
+
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="" required>
+            <option value="" selected>Selecione o sexo</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="********" required>
+
+        <label for="confSenha">Confirme a Senha</label>
+        <input type="password" name="confSenha" id="confSenha" placeholder="********" required>
+
+        <input type="submit" value="Enviar" class="btn" id="btnEnviar">
+    </form>
+
+    <br>
+    <a href="../index.html">Voltar</a>
+
+    <script src="script.js"></script>
+</body>
+</html>

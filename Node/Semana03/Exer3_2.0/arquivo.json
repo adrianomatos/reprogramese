@@ -1,0 +1,9 @@
+{
+    "veiculos": [
+        {
+            "placa": "ABC-1234",
+            "nome": "UNO",
+            "montadora": "FIAT"
+        }
+    ]
+}

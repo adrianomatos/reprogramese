@@ -1,0 +1,40 @@
+// FORMATO JSON
+// {
+//     "fruta": "Banana"
+// }
+
+// ARRAY JSON
+// {
+//     "frutas": [
+//         "Banana",
+//         "Maçã",
+//         "Morango",
+//         "Pera"
+//     ]
+// }
+
+// OBJETOS JSON
+// {
+//     "fruta": {
+//         "nome": "Banana",
+//         "cor": "Amarela"
+//     }
+// }
+
+// ARRAY DE OBJETOS JSON
+{
+    "frutas": [
+        {
+            "nome": "Banana",
+            "cor": "Amarela"
+        },
+        {
+            "nome": "Morango",
+            "cor": "Vermelha"
+        },
+        {
+            "nome": "Uva",
+            "cor": "Roxa"
+        }
+    ]
+}

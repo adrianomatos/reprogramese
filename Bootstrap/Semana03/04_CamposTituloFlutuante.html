@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos de títulos flutuantes</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+</head>
+
+<!-- placeholder com espaço vazio -->
+
+<body>
+    <!-- div.container>div>input:email#email+label[for=email]{E-mail} -->
+    <div class="container p-5">
+
+        <div class="form-floating mb-3">
+            <input type="email" name="" id="email" class="form-control" placeholder=" ">
+            <label for="email" class="form-label">E-mail</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="password" name="" id="senha" class="form-control" placeholder=" ">
+            <label for="senha" class="form-label">Senha</label>
+        </div>
+
+        <!-- div.form-floating>textarea.form-control#msg[style="height:100px" placeholder=" "]+label[for="msg"]{Mensagem aqui...} -->
+        <div class="form-floating mb-3">
+            <textarea name="" id="mensagem" class="form-control" style="height: 100px;" placeholder=" ">
+            </textarea>
+            <label for="mensagem">Mensagem</label>
+        </div>
+
+        <!-- div.form-floating>(select#cidade.form-select[placeholder=" "]>option{Cidade $}*5)+label[for=cidade]{Cidade} -->
+        <div class="form-floating">
+            <select name="" id="cidade" class="form-select" placeholder=" ">
+                <option value=""></option>
+                <option value="">Cidade 1</option>
+                <option value="">Cidade 2</option>
+                <option value="">Cidade 3</option>
+                <option value="">Cidade 4</option>
+                <option value="">Cidade 5</option>
+            </select>
+            <label for="cidade">Cidade</label>
+        </div>
+
+    </div>
+</body>
+
+</html>

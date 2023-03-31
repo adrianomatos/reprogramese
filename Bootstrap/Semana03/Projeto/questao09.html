@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 09</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <p><a href="index.html">Voltar ao Índice</a></p>
+        <h1 class="display-2">Questão 09</h1>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário da questão 7
+            adicionando complementos com ícones sugestivos a todos os campos e substituindo os títulos (labels) por
+            placeholders. Defina tamanho grande para todos os campos e botões e ajuste a responsividade do formulário
+            para nenhum campo ficar mal acomodado.</p>
+        <hr>
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container p-5 ">
+
+        <h1 class="display-4 col-12 col-lg-8 col-xl-6 mx-auto">Cadastro de Cliente</h1>
+
+        <form>
+
+            <div class="row mb-3 g-2 ">
+                <div class="col-12 col-lg-8 col-xl-6 col-xxl-6 mx-auto ">
+                    <div class="input-group">
+                        <label for="nome" class="input-group-text"><i class="bi bi-person-fill fs-6"></i></label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-8 col-xl-6 col-xxl-6 mx-auto">
+
+                    <div class="row">
+                        <div class="col-lg-4 col-12">
+                            <div class="input-group mb-3 g-2">
+                                <label for="cpf" class="input-group-text"><i class="bi bi-person-vcard fs-6"></i></label>
+                                <input type="text" class="form-control" id="cpf" placeholder="CPF">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="input-group mb-3 g-2">
+                                <label for="data" class="input-group-text"><i class="bi bi-balloon-fill fs-6"></i></label>
+                                <input type="date" class="form-control" id="data">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="input-group mb-3 g-2">
+                                <label for="genero" class="input-group-text"><i class="bi bi-gender-trans fs-6"></i></label>
+                                <select name="" id="genero" class="form-select" placeholder=" ">
+                                    <option value="">Selecione o Gênero</option>
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Feminino</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mb-3 g-2">
+                <div class="col-12 col-lg-8 col-xl-6 col-xxl-6 mx-auto">
+                    <div class="input-group">
+                        <label for="endereco" class="input-group-text"><i class="bi bi-geo-alt-fill fs-6"></i></label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Endereço completo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3 g-2">
+                <div class="col-12 col-lg-8 col-xl-6 col-xxl-6 mx-auto">
+                    <button class="btn btn-primary ">Cadastrar</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

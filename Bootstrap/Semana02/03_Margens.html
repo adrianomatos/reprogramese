@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PADDING E MARGIN</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- 
+            MARGIN: m, ms, mt ,mb, me
+            MX É DIREITO E ESQUERTO
+            MY - SUPERIOR E INFERIOR
+
+            PADDING: p ps, pt, pb, pe 
+            PX É DIREITO E ESQUERTO
+            PY - SUPERIOR E INFERIOR
+
+            pode-se criar variações de acordo com os BREAKPOINTS
+            Ex: px-md-4 - padding 4 nas laterais para telas md-4
+        -->
+        <p class="text-bg-dark m-0 px-md-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, ipsam!
+            Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Quis, ipsam!</p>
+
+        <p class="text-bg-dark mt-1 ms-4 mb-5 py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
+            ipsam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, ipsam!
+        </p>
+
+        <p class="text-bg-dark me-4 p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, ipsam! Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Quis, ipsam!</p>
+    </div>
+
+    <div class="bg-info">
+        <div class="bg-primary col-4 p-5 mx-auto"></div>
+    </div>
+    <div class="container bg-warning">
+        <div class="bg-primary col-4 p-5 mx-auto"></div>
+    </div>
+
+</body>
+
+</html>

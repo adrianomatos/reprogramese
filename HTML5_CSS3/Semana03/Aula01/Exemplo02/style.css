@@ -1,0 +1,119 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+}
+
+h1::after {
+    content: "";
+    background-image: linear-gradient(120deg, #e5ea15, #00c4ff);
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%) skew(-50deg);
+}
+
+form {
+    text-align: left;
+    display: inline-block;
+}
+
+form>div {
+    margin: 1em 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input+label {
+    display: inline;
+    margin: 0px;
+}
+
+fieldset>input[type=radio]:not(:first-of-type) {
+    margin-left: 20px;
+}
+
+fieldset {
+    display: inline-block;
+    border-radius: 2px;
+    border: solid 1px gray;
+}
+
+input {
+    border-radius: 2px;
+    border: solid 1px gray;
+}
+
+input:focus {
+    outline: 3px solid gray;
+}
+
+/*::after*/
+/* NÃO FUNCIONOU
+    content: " *";
+    color: red;*/
+input:required {
+    background-color: #00c4ff;
+
+} /*required, optional, read-only, read-write*/
+
+input[type=text]:valid,
+input[type=url]:valid,
+input[type=email]:valid,
+input[type=password]:valid {
+    background: url('img/check.svg') no-repeat 95% 50% lightgreen;
+    background-size: 15px;
+}
+
+/* y95% e x 50%*/
+
+input[type=text]:invalid,
+input[type=url]:invalid,
+input[type=email]:invalid,
+input[type=password]:invalid {
+    background: url(img/alert.svg) no-repeat 95% 50% lightsalmon;
+    background-size: 15px;
+}
+
+input[type=number]:in-range {
+    background-color: lightgreen;
+}
+
+input[type=number]:out-of-range {
+    background-color: lightsalmon;
+}
+
+input[type=text]:disabled {
+    border: dotted 1px gray;
+}
+
+input[type=checkbox]:checked+label,
+input[type=radio]:checked+label {
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #aaa;
+    background-size: 200% auto;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-position: right center;
+    transition: 0.5s;
+}

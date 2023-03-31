@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 95vw;
+    margin: 0 auto;
+    /* css definido como GRID */
+    display: grid;
+    /* 12 colunas com mesma largura */
+    grid-template-columns: repeat(12, 1fr);
+    /* 3 linhas de alturas diferentes */
+    grid-template-rows: 15vh 65vh 20vh;
+}
+
+header,
+nav,
+article,
+footer {
+    padding: 20px;
+    color: blueviolet;
+    font-size: 2rem;
+    border: 5px solid #fde687;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    background-color: mediumseagreen;
+    grid-column: span 12;
+}
+nav {
+    background-color: orange;
+    grid-column: span 3;
+}
+article {
+    background-color: yellow;
+    grid-column: span 9;
+}
+footer {
+    background-color: mediumseagreen;
+    grid-column: span 12;
+}

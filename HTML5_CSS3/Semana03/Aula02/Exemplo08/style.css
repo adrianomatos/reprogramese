@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div.conteiner {
+    width: 80vw;
+    height: 100vh;
+    background-color: red;
+    margin: 0 auto;
+}
+
+/*
+em ou rem - tamanhos de fontes
+vh e vw - largura ou a altura da viewport (parece com %)
+*/
+
+div.cabecalho {
+    height: 120px;
+    background-color: brown;
+}
+
+div.corpo {
+    background-color: blue;
+    height: calc(100vh - 240px);
+}
+
+div.menu {
+    display: inline-block;
+    background-color: coral;
+    width: 150px;
+    height: 100%;
+}
+
+div.conteudo {
+    display: inline-block;
+    background-color: green;
+    height: 100%;
+    width: calc(80vw - 150px);
+}
+div.rodape {
+    height: 120px;
+    background-color: gray;
+}

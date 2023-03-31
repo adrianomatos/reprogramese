@@ -1,0 +1,25 @@
+div {
+    background-color: darkgrey;
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    vertical-align: top;
+    margin: 10px;
+    padding: 10px;
+}
+
+#div1 {
+    overflow: visible;
+}
+
+#div2 {
+    overflow: hidden;
+}
+
+#div3 {
+    overflow: scroll;
+}
+
+#div4 {
+    overflow: auto;
+}

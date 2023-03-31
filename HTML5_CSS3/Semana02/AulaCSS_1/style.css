@@ -1,0 +1,58 @@
+/*SELETOR UNIVERSAL 
+Geralmente usado para config iniciais, ele é o MENOS ESPECÍFICO DE TODOS, TODOS OS OUTROS  tem prioridade sobre este */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*AGRUPAMENTO DE SELETORES*/
+h1,
+a {
+    color: red;
+}
+
+/*SELETOR padrão - EXPECÍFICO*/
+i {
+    color: brown;
+}
+
+/*SELETOR + EXPECÍFICO*/
+h1 i {
+    color: yellow;
+}
+
+/*SELETOR POR DESCENDENTE É AINDA + ESPECÍFICO, pq é um elemento filho ao invés de elemento neto ou elemento bisneto*/
+h1>i {
+    color: rgb(34, 0, 255);
+}
+
+/*##############################################################*/
+/* ELEMENTOS TODOS OS IRMÃOS DO TIPO INFORMADO (EM QUE AMBOS ESTÃO ABAIXO DE 1 MESMO ELEMENTO), atinge TODOS os seletores posteriores INFORMADOS P */
+h1~p {
+    text-decoration: underline;
+}
+
+/*##############################################################*/
+/*Altera APENAS O próximo elemento VIZINHO*/
+h3+p {
+    text-transform: uppercase;
+}
+
+p {
+    color: orange;
+}
+
+#paragrafo2 {
+    color: green;
+}
+
+ul {
+    background: blue;
+}
+
+li {
+    color: white;
+}
+
+.vermelho {
+    color: rgb(0, 217, 255);
+}

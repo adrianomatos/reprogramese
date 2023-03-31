@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriano Matos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <table class="borderCabecalho">
+            <tr>
+                <th>
+                    <table>
+                        <tr>
+                            <th align="right" rowspan="2" width="250px"><img class="minhaFoto" width="125px"
+                                    src="img/minhaFoto.png" alt="">
+                            </th>
+                            <th align="left">
+                                <h1>Adriano Matos</h1>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th align="left">
+                                <h3>&lt;Full-Stack Developer&gt;</h3>
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+        </table>
+    </header>
+
+    <main>
+        <table>
+            <tr height="70px">
+                <th colspan="2">
+                    <a href="index.html">Principal</a>
+                    <a href="quemsou.html">Quem Sou</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a class="linkMenu" href="contato.html">Contato</a>
+                </th>
+            </tr>
+        </table>
+
+        <table >
+            <tr>
+                <td>
+                    <h1>Entre em contato</h1>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Preencha todos os campos do formulário a seguir e em até 48h lhe responderei.</td>
+            </tr>
+            <tr>
+                <td>Será um prazer lhe atender!</td>
+            </tr>
+        </table><br>
+
+        <table >
+            <form action="" method="post">
+                <tr>
+                    <td>
+                        <p>
+                            <label for="selectAssunto">Assunto:</label><br>
+                            <select name="assunto" id="selectAssunto">
+                                <option value="">Selecione o assunto</option>
+                                <option value="aquis">Aquisição</option>
+                                <option value="manut">Manutenção</option>
+                                <option value="cagece">Água</option>
+                                <option value="enel">Energia</option>
+                            </select>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <!--NOME-->
+                            <label for="txtNome">Nome completo: </label><br>
+                            <input type="text" name="nome" id="txtNome" placeholder="Insira seu nome completo" value="">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <!--E-MAIL-->
+                            <label for="txtEmail">E-mail: </label><br>
+                            <input type="email" name="email" id="txtEmail" placeholder="Insira seu melhor e-mail"
+                                value="">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="telefone">Nº de telefone:</label><br>
+                            <input type="text" placeholder="xx-xxxxx.xxxx" pattern="[0-9]{2}-[0-9]{5}.[0-9]{4}" required
+                                maxlength="13">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="obsTextarea">Mensagem:</label><br>
+                            <textarea name="obs" id="obsTextarea" cols="30" rows="10"
+                                placeholder="Indique suas observações..."></textarea>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <!--ENVIAR-->
+                            <input type="submit" value="Enviar" class="linkContato">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <hr><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                        <h2>Outras formas de contato:</h2>
+                        </p>
+                        <p><b>Endereço: </b>Tauá/CE.</p>
+                        <p><b>E-mail: </b><a href="mailto:adrianotaua@hotmail.com">adrianotaua@hotmail.com</a></p>
+                        <p><b>Telefone/Whatsapp: </b><a href="https://wa.me/88981935976">(88) 9.8193-5976</a></p>
+                        <p><b>Rede social profissional: </b><a href="https://www.linkedin.com/in/matttos/">Linkedin</a>
+                        </p>
+                    </td>
+                </tr>
+            </form>
+        </table><br>
+
+        <br>
+    </main>
+
+
+    <footer>
+        <br>
+        <table >
+            <tr>
+                <td align="center">
+                    <p>Copyright &copy; 2022</p>
+                    <img src="img/ifes.png" title="Logomarca IFES" alt="IFES" width="100">
+                </td>
+            </tr>
+        </table>
+        <br>
+    </footer>
+</body>
+
+</html>

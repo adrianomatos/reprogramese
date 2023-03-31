@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    /* flex-direction: row; */
+}
+
+nav {
+    background-color: chartreuse;
+    flex-grow: 1;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+}
+
+header,
+footer {
+    height: 20vh;
+    background-color: darkgray;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main>article {
+    /* flex: 3; */
+    min-height: 60vh;
+}
+
+header,
+footer,
+article,
+nav {
+    padding: 20px;
+}

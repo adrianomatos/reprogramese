@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body,
+a {
+    color: gray;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline double;
+    font-variant: small-caps;
+    /*Minha Escrita*/
+
+    /*solid, dotted, dashed, double, wave*/
+
+    /*sombra em x e y e borramento*/
+    /*text-shadow: 1px 1px 2px red;*/
+    text-shadow: 0px 0px 3px blue;
+    /*efeito de brilho*/
+}
+
+h2 {
+    color: aqua;
+    font-family: "Roboto";
+}
+
+ul {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    /*lowercase, capitalize, none*/
+    list-style-type: square;
+    /*inserir imagem nos LIS
+    list-style-image: url("img/setaRed.jpg");*/
+    margin-left: 40px;
+}
+
+li {
+    /* em linha unica
+    display: inline-block;*/
+}
+
+li>a {
+    border: none 0px;
+    background-color: white;
+    line-height: 1.5;
+}
+
+p {
+    text-align: justify;
+    text-decoration: underline;
+
+    /*formatacao 1ª linha*/
+    text-indent: 30px;
+    /*espaco entre caracteres*/
+    letter-spacing: 3px;
+    /*espaço entre linha - 1 padrao*/
+    line-height: 1.5;
+    /*espaco entre palavras*/
+    word-spacing: 10px;
+
+    /*white-space: nowrap;     quebra linha como digitado*/
+    /*white-space: pre-wrap;  faz quebra de linha automatica e aceita quebras manuais*/
+    /*white-space: pre-line;  ignora espaços manuais*/
+    white-space: normal;
+}
+
+.cancel {
+    text-decoration: line-through;
+}
+
+.ass {
+    text-decoration: overline;
+    text-align: center;
+}
+
+/*########################   LINKS NESSA ORDEM
+/*links não visitados*/
+a:link {
+    color: black;
+    text-decoration: none;
+    /*cursor: copy;*/
+}
+
+a:visited {
+    color: blue;
+}
+
+/*mouse sobre link*/
+a:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*sendo clicado*/
+a:active {
+    color: yellow;
+}
+
+/* link aparencia botao*/
+a {
+    border: solid 1px black;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 08px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos de Checagem</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+</head>
+
+<body>
+    <!-- div.container.p-5>div.mb-3>input:checkbox#novo+label[for="novo"]{Produto novo} -->
+    <div class="container p-5">
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" id="produto" class="form-check-input">
+            <label for="produto" class="form-check-label">
+                Produto novo</label>
+        </div>
+        <hr>
+
+        <div class="mb-3 form-switch">
+            <input type="checkbox" id="novinho" class="form-check-input">
+            <label for="novinho" class="form-check-label">
+                Produto novo</label>
+        </div>
+        <hr>
+
+        <div class="mb-3 form-radio">
+            <input type="radio" id="bom" class="form-radio-input" name="condicao">
+            <label for="bom" class="form-radio-label">Bom</label>
+        </div>
+
+        <div class="mb-3 form-radio">
+            <input type="radio" id="ruim" class="form-radio-input" name="condicao">
+            <label for="ruim" class="form-radio-label">Ruim</label>
+        </div>
+        <hr>
+
+        <div class="mb-3 form-radio form-check-inline">
+            <input type="radio" id="novo" class="form-radio-input" name="produto">
+            <label for="novo" class="form-radio-label">Produto novo</label>
+        </div>
+
+        <div class="mb-3 form-radio form-check-inline">
+            <input type="radio" id="usado" class="form-radio-input" name="produto">
+            <label for="usado" class="form-radio-label">Produto Usado</label>
+        </div>
+        <hr>
+
+        <div class="mb-3 form-radio form-check-reverse">
+            <input type="radio" id="tipoNovo" class="form-radio-input" name="tipo">
+            <label for="tipoNovo" class="form-radio-label">
+                Produto novo</label>
+        </div>
+
+        <div class="mb-3 form-radio form-check-reverse">
+            <input type="radio" id="tipoUsado" class="form-radio-input" name="tipo">
+            <label for="tipoUsado" class="form-radio-label">
+                Produto Usado</label>
+        </div>
+        <hr>
+
+        <!-- dev.mb-3>input:checkbox+label{Entrega rápida} -->
+        <p>01 opção ou 2?</p>
+        <dev class="mb-3">
+            <input type="checkbox" name="entrega" id="entregaTradicional" class="btn-check">
+            <label for="entregaTradicional" class="btn btn-outline-primary">Tradicional</label>
+        </dev>
+
+        <dev class="mb-3">
+            <input type="checkbox" name="entrega" id="entregaSedex" class="btn-check">
+            <label for="entregaSedex" class="btn btn-outline-primary">Sedex</label>
+        </dev>
+        <hr>
+
+        <p>Tipo de tensão</p>
+        <dev class="mb-3">
+            <input type="radio" name="modo" id="tradicional" class="btn-check">
+            <label for="tradicional" class="btn btn-outline-primary">110V</label>
+        </dev>
+
+        <dev class="mb-3">
+            <input type="radio" name="modo" id="sedex" class="btn-check">
+            <label for="sedex" class="btn btn-outline-primary">220V</label>
+        </dev>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: aquamarine;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    height: 600px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    /* linha nem precisa */
+    flex-direction: row;
+}
+
+div {
+    width: 10%;
+    background-color: blueviolet;
+}
+
+#div1 {
+    height: 50%;
+}
+
+#div2 {
+    height: 40%;
+}
+
+#div3 {
+    height: 30%;
+}
+
+#div4 {
+    height: 60%;
+}
+
+#div5 {
+    height: 80%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- text-nowrap - não faz quebra 
+        text-break - obriga quebra de linha quando espaço é pequeno -->
+    <div class="container">
+        <p class="fs-1">Similar aos H1 até H6</p>
+        <div class="text-sm-end 
+        text-break
+        text-uppercase
+        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, numquam. Dolore suscipit recusandae assumenda
+            praesentium dolores totam rem, et quasi.</div>
+    </div>
+
+    <div class="container fs3">
+        <p class="fw-bold">Negrito</p>
+        <p class="fw-semibold">semibold</p>
+        <p class="fw-normal">peso normal</p>
+        <p class="fw-light">light</p>
+        <p class="fst-italic">fst-italic</p>
+        <p class="fst-normal">estilo fst-normal</p>
+    </div>
+
+    <div class="container fs-5">
+        <!-- ALTERA ALTURA DA LINHA -->
+        <!-- base, 1, sm, base, lg -->
+        <p class="lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, harum dignissimos doloribus
+            repellendus
+            magni, corporis facilis accusantium expedita accusamus mollitia vero iusto non eveniet nam? Iusto eos
+            cum id.</p>
+
+        <!-- espaço entre letras iguais -->
+        <p class="font-monospace text-muted text-decoration-underline">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Impedit delectus
+            magni atque
+            pariatur provident rem quibusdam, hic accusantium explicabo? Dignissimos voluptatem ullam rerum
+            reprehenderit enim.
+            <!-- faz link seguir formatação do texto acima -->
+            <a class="text-reset" href="">LINK AQUI</a>
+        </p>
+        <p class="text-decoration-line-through text-danger">texto riscado</p>
+        <a class="text-decoration-none tex-deco" href="">formatação de links</a>
+        <p class="text-truncate">receita da vovó TRUNCADA - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tempora repellat assumenda modi molestiae libero. Veniam modi asperiores fuga voluptatem dolor molestias
+            cupiditate quae iure incidunt sequi voluptatibus, nulla temporibus odio?</p>
+    </div>
+
+</body>
+
+</html>

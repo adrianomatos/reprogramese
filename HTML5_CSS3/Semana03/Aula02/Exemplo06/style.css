@@ -1,0 +1,13 @@
+div {
+    border: solid 1px black;
+    margin: 30px;
+    padding: 10px;
+}
+
+#id2{
+    /*display: none; EXCLUI*/
+    
+    /*UNE DIV2 COM PAI,
+    NETOS DIVS3 PASSAM A SER FILHOS DE DIV1*/
+    display: contents;
+}

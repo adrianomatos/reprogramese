@@ -1,0 +1,41 @@
+body {
+    background-color: coral;
+    margin: 10px;
+}
+
+
+
+
+
+/* formata os filhos múltiplos de 1 a 4 */
+.conteiner>div:nth-child(1n) {
+    background-color: aqua;
+}
+
+.conteiner>div:nth-child(2n) {
+    background-color: antiquewhite;
+}
+
+.conteiner>div:nth-child(3n) {
+    background-color: rebeccapurple;
+}
+
+.conteiner>div:nth-child(4n) {
+    background-color: yellow;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 50px 50px 100px;
+}
+
+.conteiner>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: blue;
+    grid-gap: 10px;
+    /* Property is obsolete */
+}

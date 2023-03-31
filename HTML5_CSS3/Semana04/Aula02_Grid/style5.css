@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fff7d8;
+    margin: 10px;
+}
+
+header,
+nav,
+article,
+footer {
+    color: fff7d8;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: calc(100vh - 20px);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px auto 100px;
+    /* DEFINIÇÃO DE ÁREAS NOMEADAS */
+    grid-template-areas:
+        ". . . h h h h h h h h h"
+        "n n n a a a a a a a a a"
+        "n n n f f f f f f f f f";
+    /* shift + alt para selecionar multiplas linhas */
+}
+
+header {
+    background-color: rebeccapurple;
+    grid-area: h;
+}
+
+nav {
+    background-color: gray;
+    grid-area: n;
+}
+
+article {
+    background-color: white;
+    grid-area: a;
+}
+
+footer {
+    background-color: darkgray;
+    grid-area: f;
+}

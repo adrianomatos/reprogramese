@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "html-pdf": "^3.0.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "semana01",
+  "version": "1.0.0",
+  "description": "Projeto de teste",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adriano Matos",
+  "license": "ISC"
+}

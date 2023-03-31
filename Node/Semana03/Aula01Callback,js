@@ -1,0 +1,45 @@
+// Uma função callback no JavaScript é uma função que é passada como parâmetro para outra função, que pode chamar a função callback para completar algum tipo de rotina ou ação.
+// Os códigos e funções assíncronas no JavaScript, quando são executados, não bloqueiam a execução das linhas de código seguintes.Uma função assíncrona é executada em segundo plano enquanto o programa continua interpretando as linhas de código seguintes.
+
+
+// ----------------------------------------------------Função assíncrona
+// setTimeout(() => {
+//     console.log("Conexão realizada com sucesso!");
+// }, 3000);
+// Exemplo de carga da página
+// console.log("Carga de página");
+
+const prompt = require('prompt-sync')();
+
+// ----------------------------------------------------EXEMPLO CALLBACK 01
+// function obterNome(callback) {
+//     var nome = prompt("Entre com seu nome: ");
+//     callback(nome);
+// }
+// obterNome((nome) => console.log(nome)); // arrow function reduzido
+
+
+// ----------------------------------------------------EXEMPLO CALLBACK 02
+function cadastrarUsuario(callback) {
+    setTimeout(() => {
+        // LÓGICA AQUI
+        
+        // callback();  //Para quando não houver erro
+        callback(new Error("Erro no registro do usuário!"));
+    }, 2000);
+}
+
+cadastrarUsuario((erro) => {
+    if (erro) {
+        return console.log('Ocorreu um erro: ' + erro.message);
+    }
+    console.log("Usuário registrado com sucesso!");
+});
+
+/*
+Qual é o tipo de parâmetro que foi passado no momento da chamada da função cadastrarUsuario?
+a.Um objeto Usuario
+b.Um objeto Error
+c.Uma função callback
+d.Uma string
+*/

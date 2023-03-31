@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+</head>
+
+<body>
+    <div class="container p-5">
+        <form action="">
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <!-- disabled  form-control-lg-->
+                <input type="text" id="email" class="form-control" placeholder="Insira seu e-mail">
+                <div class="form-text">Nunca compartilharemos seu e-mail.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="text" id="senha" class="form-control">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" id="lembrar" class="form-check-input">
+                <label for="lembrar" class="form-check-label">Lembrar senha</label>
+            </div>
+
+            <button type="submit" class="btn btn-success">Entrar</button>
+        </form>
+        <hr>
+        <input type="file" name="" id="arquivo" class="form-control">
+        <input type="color" name="" id="cor" class="form-control">
+        <hr>
+        <!-- div.mb-3>(label.form-control{Cidade}+input.form-control[placeholder="Busque aqui"]) -->
+        <div class="mb-3">
+            <label for="" class="form-label">Cidade</label>
+            <input type="text" class="form-control" placeholder="Busque aqui" list="cidades">
+            <!-- datalist#cidades>(option[value="Cidade $"])*6 -->
+
+            <datalist id="cidades">
+                <option value="Fortaleza"></option>
+                <option value="Belo Horizonte"></option>
+                <option value="São Paulo"></option>
+                <option value="Rio de Janeiro"></option>
+                <option value="Recife"></option>
+                <option value="Natal"></option>
+            </datalist>
+        </div>
+    </div>
+</body>
+
+</html>

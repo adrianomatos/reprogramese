@@ -1,0 +1,58 @@
+div,
+span {
+    border: solid 1px black;
+}
+
+div:nth-of-type(2) {
+    display: inline;
+}
+
+/*first-of-type*/
+span:nth-of-type(2) {
+    display: block;
+}
+
+#id1,
+#id2,
+#id3,
+#id4,
+#id5 {
+    border: solid black 5px;
+    text-align: center;
+    margin: 3px;
+    height: 25px;
+    font-size: 20px;
+}
+
+/* inexistente */
+#id2 {
+    display: none;
+}
+
+/* oculto */
+#id4 {
+    visibility: hidden;
+}
+
+#span1 {
+    border: solid 3px rgb(19, 7, 111);
+    /*ÑÃO funcionam quando estão em modo INLINE*/
+    height: 50px;
+    width: 300px;
+}
+
+#span2 {
+    border: solid 3px green;
+    display: block;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+}
+
+#span3, #span4 {
+    border: solid 3px red;
+    display: inline-block;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+}

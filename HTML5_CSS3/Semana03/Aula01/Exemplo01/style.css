@@ -1,0 +1,42 @@
+/*after - depois*/
+/*before - antes*/
+
+p:after {
+    content: " 'Conteúdo do css'";
+}
+
+#p1:after {
+    content: " -> 'Parágrafo 1'";
+}
+
+/* :: tem maior compatibilidade c/ browsers antigos*/
+#p3::first-letter {
+    font-size: 30px;
+    color: blue;
+}
+
+#p2:first-line {
+    background-color: aquamarine;
+    font-variant: small-caps;
+}
+
+ul>li::marker {
+    content: "🎅 ";
+}
+
+ol>li::marker {
+    color: red;
+}
+
+/* ^="http" - todo link que começe com http  */
+a[href^="http"]::after {
+    content: " ✉";
+    font-weight: bold;
+    display: block; /* BR */
+}
+
+/* $=".css" - todo link que TERMINE com css  */
+a[href$=".css"]::after {   /*before*/
+    content: ".pdf 📝";
+    color: red;
+}

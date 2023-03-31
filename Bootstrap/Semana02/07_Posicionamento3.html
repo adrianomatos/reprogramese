@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- vstack-torna conteudo uma pilha vertical 
+    gap - adiciona espacamento
+    gap-md-2 - permite responsividade
+    -->
+    <div class="container my-3 vstack gap-md-2">
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+
+    <!-- hstack na horizontal -->
+    <div class="container my-3 hstack gap-md-3 gap-lg-5">
+        <div class="p-5 bg-primary"></div>
+        <!-- barra vertical margem total a esquerda -->
+        <div class="vr ms-auto"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+
+    <div class="container my-3 ">
+        <div class="p-5 bg-dark "></div>
+        <div class="p-5 bg-danger position-absolute 
+        bottom-0 start-0 end-0"></div>
+        <div class="p-5 bg-info"></div>
+    </div>
+</body>
+
+</html>
