@@ -1,0 +1,25 @@
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            color: blue;
+        }
+
+        a {
+            color: red;
+        }
+
+        img{
+            width: 100px;
+        }
+
+        p {
+            text-align: center;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
