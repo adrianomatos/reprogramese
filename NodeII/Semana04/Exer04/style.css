@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    background-color: blueviolet;
+}
+
+form{
+    background-color: white;
+    width: 40%;
+    padding: 30px;
+    margin: auto;
+}
+
+input, textarea{
+    padding: 10px;
+    width: 80%;
+}
+
+.botao{
+    padding: 10px 20px;
+    width: 50%;
+}
+
