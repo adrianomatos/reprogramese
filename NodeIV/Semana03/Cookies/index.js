@@ -2,14 +2,14 @@
 const express = require("express");
 const app = express();
 
-// cookie
+// COOKIE
 var cookie = require("cookie-parser");
 app.use(cookie());
 
 // objeto usuário tipo json
 let usuario2 = {
-  nome: "Junior",
-  idade: "14",
+  nome: "Juninho",
+  email: "jr@hotmail.com",
 };
 
 // ADICIONAR COOKIES
@@ -21,15 +21,16 @@ app.get("/adicionarUsuario", (req, res) => {
 
 //LISTAR COOKIES
 app.get("/usuarios", (req, res) => {
-  res.send(req.cookies); // - MOSTRAR todos os cookies
+  // res.send(req.cookies); // - MOSTRAR todos os cookies
   // res.send(req.cookies.usuarioDados); // MOSTRAR cookie específico
-  // res.send(req.cookies.usuarioDados2); // MOSTRAR cookie específico
+  // res.send(req.cookies.usuarioDados3); // MOSTRAR cookie específico
+  res.send(req.cookies.usuarioDados3.nome); // MOSTRAR DADOS de cookie específico
 });
 
 // EXCLUIR COOKIES
 app.get("/logout", (req, res) => {
-  // res.clearCookie(usuarioDados);
-  res.clearCookie(usuarioDados2);
+  // res.clearCookie(); // EXCLUI todos os cookies NÃO FUNCIONA
+  // res.clearCookie("usuarioDados"); // Exclui cookie específico
   res.send("Usuário desconectado com sucesso!");
 });
 

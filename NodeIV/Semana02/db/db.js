@@ -1,3 +1,6 @@
+// npm install sqlite3
+// npm install sequelize
+
 // Bibliotecas e módulos
 const Sequelize = require("sequelize");
 
